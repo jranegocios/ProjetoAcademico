@@ -75,3 +75,17 @@ footer{
     padding-top: 5px;
     align-items: center;
 }
+
+/* CONTATO */
+.overflow{
+    /* background-color: white; */
+    margin-top:20px;
+    height: 150px;
+    overflow-y: auto;
+    padding: 5px;
+}
+
+table td{
+    border-bottom: 1px solid #028017;
+    padding: 5px;
+}

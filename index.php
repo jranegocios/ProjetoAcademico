@@ -1,7 +1,11 @@
-<?php require("template/header.php"); ?>
+<?php
+session_start();  
+    require("template/header.php"); 
+    require("select.php"); 
+?>
 
 <section class="container-session">
-<h1>home</h1>
+   Total de Contatos Cadastrado <?= count($contatos);?>
 </section>
 
 

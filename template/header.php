@@ -1,3 +1,4 @@
+<?php require("data/data.php"); ?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>

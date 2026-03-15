@@ -1,15 +1,19 @@
 <?php
-
+    $host = "localhost";
     $user = "root";
     $pass = "";
-    $dsn = "mysql:host=localhost;dbname=agenda";
+    $db = "agenda";
+
+    
     
     try{
-        $con = new PDO($dsn,$user,$pass,[
-            PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
-            PDO::ATTR_PERSISTENT => false
-        ]);
+        // $con = new PDO("mysql:host=$host; dbname=$db",$user,$pass);
+        $con= new PDO ("mysql:host=$host;dbname=$db",$user,$pass);
+        $con ->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
+            // PDO::ATTR_PERSISTENT => false;
     }catch(PDOException $e){
         echo "ERRO: ".$e->getMessage();
     }
+
+    
 ?>
