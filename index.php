@@ -1,2 +1,8 @@
-<?php require("template/template.php"); ?>
-<h1>Contact List</h1>
+<?php require("template/header.php"); ?>
+
+<section class="container-session">
+<h1>home</h1>
+</section>
+
+
+<?php require("template/footer.php");?>
